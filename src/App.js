@@ -1,50 +1,58 @@
 import bootstrap from "bootstrap";
 import "./App.css";
-import {
-  BrowserRouter,
-  Router,
-  Switch,
-  Route,
-  Link,
-  Routes,
-} from "react-router-dom";
-import { Home } from "./componentes/Home";
-import { Quines } from "./componentes/Quines";
+import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import { Inicio } from "./componentes/inicio";
+import { Noticias } from "./componentes/Noticias";
+import { Nosotros } from "./componentes/Quines";
+import logoSecOb from "./imagenes/logoSecOb.png";
+import Programas from "./componentes/Programas";
+import Capacitaciones from "./componentes/Capacitaciones";
+import Reuniones from "./componentes/Reuniones";
 function App() {
   return (
-    <div className="App ">
+    <div className="App container">
       <BrowserRouter>
-        
-          <nav className="navbar navbar-expand-lg bg-light">
-            <div className="container-fluid">
-              <a className="navbar-brand" href="#">
-                Navbar
-              </a>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                  <Link to="/">Home</Link>
-                  <Link to="/quines">quines somos</Link>
-                </div>
+        <div className="container">
+          <div className="row">
+            <div className="logoSecretaria  col-xl-5">
+              <img src={logoSecOb} className="img-fluid" alt="" />
+            </div>
+            <div className="navbar-nav col-xl-7 ">
+              <div className="nav-item  row  itemLinks text-center">
+                <Link className="nav-link col-xl col-xs-12 " to="/">
+                  inicio
+                </Link>
+                <Link className="nav-link col-xl col-xs-12" to="/nosotros">
+                  nosotros
+                </Link>
+                <Link className="nav-link col-xl col-xs-12" to="/noticias">
+                  noticias
+                </Link>
+                <Link className="nav-link col-xl col-xs-12" to="/programas">
+                  programas
+                </Link>
+                <Link
+                  className="nav-link col-xl col-xs-12"
+                  to="/capacitaciones"
+                >
+                  capacitaciones
+                </Link>
+                <Link className="nav-link col-xl col-xs-12" to="/reuniones">
+                  reuniones
+                </Link>
               </div>
             </div>
-          </nav>
+          </div>
+        </div>
 
-          <Routes>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/quines" element={<Quines/>}></Route>
-          </Routes>
-        
+        <Routes>
+          <Route path="/" element={<Inicio />}></Route>
+          <Route path="/nosotros" element={<Nosotros />}></Route>
+          <Route path="/noticias" element={<Noticias />}></Route>
+          <Route path="/programas" element={<Programas />}></Route>
+          <Route path="/capacitaciones" element={<Capacitaciones />}></Route>
+          <Route path="/reuniones" element={<Reuniones />}></Route>
+        </Routes>
       </BrowserRouter>
     </div>
   );

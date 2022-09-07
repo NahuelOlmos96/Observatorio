@@ -1,0 +1,14 @@
+.imagenes{
+    display: inline-block;
+    width: 500px;
+    background-color: red;
+    height: 700px;
+}
+
+.texto{
+    height: 700px;
+    
+    display: inline-block;
+    width: 772px;
+    background-color: blue;
+}

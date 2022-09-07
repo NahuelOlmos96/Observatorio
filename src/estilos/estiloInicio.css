@@ -1,0 +1,67 @@
+.contenedorInicio {
+  height: auto;
+  background-color: #fff;
+  background-image: url("../imagenes/fondo.png");
+  padding: 0px !important;
+  background-size: 43%;
+  margin: 0px !important;
+  
+}
+
+
+.logo {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+
+    
+}
+.flechaAnimada1{
+    animation: introflecha;
+    animation-duration: 2s;
+}
+.flechaAnimada2{
+    animation: introflecha1;
+    
+    animation-duration: 3s;
+    position: relative;
+    
+    
+    left: -90px;
+    z-index: 0;
+}
+.logoOb{
+    padding-top: 50px;
+    max-width: 300px;
+}
+@keyframes introflecha{
+    0%{
+        
+        position: relative;
+        left: -200px; 
+        animation: ease-in-out;
+    }
+    100%{
+        
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes introflecha1 {
+    0%{
+        opacity: 0.5;
+        position: relative;
+        left: -400px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        left: -90px;
+    }
+}
+
+.logoOb:hover{
+    transition: 2s;
+    transform: rotatey(350deg);
+}
