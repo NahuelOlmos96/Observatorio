@@ -1,67 +1,99 @@
+.contenedorTodo {
+  background-color: #fff;
+}
+
 .contenedorInicio {
+
   height: auto;
   background-color: #fff;
   background-image: url("../imagenes/fondo.png");
-  padding: 0px !important;
-  background-size: 43%;
+  padding: 0 !important;
+  background-size: 50%;
   margin: 0px !important;
+}
+.contendorflecha{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center; 
+    
+
+}
+
+
+.flechaAnimada1 {
+  animation: introflecha;
+  width: 160%;
+  height: 100%;
+  animation-duration: 1s;
+  z-index: 1;
+}
+.flechaAnimada2 {
+  animation: introflecha1;
+  animation-duration: 2s;
+  position: relative;
+  width: 90%;
+  height: 35%;
+  left: -90px;
+  z-index: 0;
+}
+.logoOb {
+    position: relative;
+    bottom: -20px;
+    width: 60%;
+}
+.contendorMiembros {
+    margin: 10px 0;
+}
   
+.contendorapoyo {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    justify-items: start;
+    padding-left: 8%;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
+    background-image: linear-gradient(to right, rgb(10,18,29) , rgb(49,64,84));
+    
 }
-
-
-.logo {
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
+.logomiembro{
+    
+    width: 80%;
+}
+  .contenedorLogos {
+    background-color: #fff !important;
+    padding: 100px 0;
+    border-left: 2px solid rgb(196, 195, 195);
+    border-right: 2px solid rgb(196, 195, 195);
+    border-bottom: 2px solid rgb(196, 195, 195) ;
     height: auto;
+  }
+/* keyframes*/
 
-    
-}
-.flechaAnimada1{
-    animation: introflecha;
-    animation-duration: 2s;
-}
-.flechaAnimada2{
-    animation: introflecha1;
-    
-    animation-duration: 3s;
+@keyframes introflecha {
+  0% {
     position: relative;
-    
-    
-    left: -90px;
-    z-index: 0;
-}
-.logoOb{
-    padding-top: 50px;
-    max-width: 300px;
-}
-@keyframes introflecha{
-    0%{
-        
-        position: relative;
-        left: -200px; 
-        animation: ease-in-out;
-    }
-    100%{
-        
-        position: relative;
-        left: 0px;
-    }
+    left: -200px;
+    animation: ease-in-out;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
 }
 @keyframes introflecha1 {
-    0%{
-        opacity: 0.5;
-        position: relative;
-        left: -400px;
-    }
-    100%{
-        opacity: 1;
-        position: relative;
-        left: -90px;
-    }
+  0% {
+    opacity: 0;
+    position: relative;
+    left: -535px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    
+    opacity: 1;
+    position: relative;
+    left: -90px;
+  }
 }
-
-.logoOb:hover{
-    transition: 2s;
-    transform: rotatey(350deg);
-}
+/* hovers*/
