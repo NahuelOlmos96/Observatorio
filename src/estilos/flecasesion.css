@@ -1,0 +1,33 @@
+.contenedorFlecha{
+    display: grid;
+    align-items: center;
+    width: 120%;
+   
+}
+
+.imagenFlecha{
+    width: 100%;
+}
+
+.nombreFlecha {
+    color: #fff;
+    position: relative;
+    font-size: 35px;
+    left: -38%;
+    bottom: -7px;
+    animation: ingresoflecha;
+    animation-duration: 1s;
+   
+    
+}
+
+@keyframes ingresoflecha {
+
+   0%{
+    opacity: 0;
+    translate: -100px;
+   } 
+   100%{
+
+   } 
+}

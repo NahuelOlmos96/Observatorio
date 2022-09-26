@@ -1,7 +1,5 @@
-.presentacioNosotros{
-    display: inline-block;
+.fondoNosotros{
     background-image: url("../imagenes/contenidoNosotros/NOSOTROS.png ");
     background-repeat: no-repeat;
     background-size: cover;
-    
 }

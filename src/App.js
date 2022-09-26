@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
 import { Inicio } from "./componentes/inicio";
 import { Noticias } from "./componentes/Noticias";
-import { Nosotros } from "./componentes/Quines";
+import { Nosotros } from "./componentes/Nosotros";
 import logoSecOb from "./imagenes/logoSecOb.png";
 import Programas from "./componentes/Programas";
 import Capacitaciones from "./componentes/Capacitaciones";
