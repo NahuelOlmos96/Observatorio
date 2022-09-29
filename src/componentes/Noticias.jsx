@@ -19,7 +19,7 @@ export const Noticias = () => {
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner Carrucel">
+          <div class="carousel-inner CarrucelNoticias">
             <div class="carousel-item active">
               <img src={imgnoticia1} class="imagenCarrucel" alt="..." />
               <div className="textNoticia">

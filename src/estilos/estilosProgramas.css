@@ -1,11 +1,10 @@
-.fondoNoticias{
-    background-image: url("https://i.ibb.co/ZYQz4fR/NOTICIAS-1.png");
+.fondoprogramas{
+    background-image: url("https://i.ibb.co/GchHZj1/PROGRAMAS.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imagenCarrucel{
     width: 60%;
-    margin-bottom: 20px;
     
 
 }
@@ -14,9 +13,9 @@
     display: grid;
         
 }
-.CarrucelNoticias{  
-    padding: 5% 15%;
-    text-align: justify;
+.Carrucel{  
+    padding: 0px 10px;
+    text-align: center;
     width: 100%;
     height:100%;
     animation: carrucel;

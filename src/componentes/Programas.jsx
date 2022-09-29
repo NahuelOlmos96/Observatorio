@@ -1,12 +1,12 @@
 import React from "react";
 import Flechasesion from "./Flechasesion";
 import datosProgramas from "../datos/programas.js";
-
+import "../estilos/estilosProgramas.css"
 
 const Programas = () => {
   return (
     <div className="contenedor">
-      <div className="fondoNoticias">
+      <div className="fondoprogramas">
         <div className="presentacio">
           <Flechasesion nombreSecion="Programas" />
         </div>
