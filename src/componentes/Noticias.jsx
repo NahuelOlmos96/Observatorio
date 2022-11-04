@@ -13,6 +13,7 @@ export const Noticias = () => {
           <Flechasesion nombreSecion="Noticias" />
         </div>
       </div>
+      <div className="encabezadoCel text-primary">Noticias</div>
       <div className="contenedorCarrucel">
         <div
           id="carouselExampleControls"

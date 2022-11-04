@@ -1,5 +1,45 @@
 .fondoNosotros{
     background-image: url("../imagenes/contenidoNosotros/NOSOTROS.png ");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    
+}
+.encabezadoCel{
+    visibility: hidden;
+    display: none;
+    background-image: url("../imagenes/contenidoNosotros/NOSOTROS.png ");
+    height: 40px ;
+    margin: 15px;
+    border: 1px black solid;
+    text-align: center;
+    
+
+    
+}
+
+.contenidoNosotros{
+    margin: 10px 70px ;
+    text-align: start;
+    overflow-y: scroll;
+    scroll-behavior: unset;
+    text-transform: capitalize;       
+}
+@media only screen and (max-width: 600px) {
+
+    .fondoNosotros{
+        visibility: hidden;
+        display: none;
+        
+    }
+
+    .encabezadoCel{
+        visibility: visible;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contenidoNosotros{
+        margin: 12px;       
+    }
 }

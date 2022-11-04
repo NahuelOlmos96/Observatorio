@@ -21,7 +21,7 @@ export const Inicio = () => {
   AOS.init();
   return (
     <div className="contenedorTodo">
-      <div className="container contenedorInicio">
+      <div className="contenedorInicio">
         <div className="contendorflecha ">
           <img className="flechaAnimada1  " src={flecha1} alt="" />
           <img className="flechaAnimada2" src={flecha2} alt="" />
@@ -37,10 +37,10 @@ export const Inicio = () => {
         </div>
         <div className="contenedorLogos">
           <div className="row justify-content-center">
-            <img data-aos="flip-right" className="col-2" src={logo1} alt="" />
-            <img data-aos="flip-right" className="col-2" src={logo2} alt="" />
-            <img data-aos="flip-right" className="col-2" src={logo3} alt="" />
-            <img data-aos="flip-right" className="col-2" src={logo4} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2" src={logo1} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2" src={logo2} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2" src={logo3} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2" src={logo4} alt="" />
           </div>
           <div className="row justify-content-center">
             <img data-aos="flip-right" className="col-2" src={logo5} alt="" />
@@ -50,13 +50,13 @@ export const Inicio = () => {
               src={logo6}
               alt=""
             />
-            <img data-aos="flip-right" className="col-2" src={logo7} alt="" />
-            <img data-aos="flip-right" className="col-2" src={logo8} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2 " src={logo7} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2" src={logo8} alt="" />
           </div>{" "}
           <div className="row justify-content-center">
-            <img data-aos="flip-right" className="col-2 " src={logo10} alt="" />
-            <img data-aos="flip-right" className="col-2 " src={logo11} alt="" />
-            <img data-aos="flip-right" className="col-2 " src={logo9} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2 " src={logo10} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2 " src={logo11} alt="" />
+            <img data-aos="flip-right" className="col-sm-6 col-xl-2" src={logo9} alt="" />
           </div>
         </div>
       </div>

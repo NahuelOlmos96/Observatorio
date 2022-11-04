@@ -1,4 +1,4 @@
-import bootstrap from "bootstrap";
+
 import "./App.css";
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
 import { Inicio } from "./componentes/inicio";
@@ -10,38 +10,41 @@ import Capacitaciones from "./componentes/Capacitaciones";
 import Reuniones from "./componentes/Reuniones";
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <BrowserRouter>
-        <div className="container">
-          <div className="row">
-            <div className="logoSecretaria  col-xl-5">
+        <div className="navbar navbar-expand-lg bg-light">
+          <div className="container-fluid">
+            <div className="logoSecretaria navbar-brand  ">
               <img src={logoSecOb} className="img-fluid" alt="" />
-            </div>
-            <div className="navbar-nav col-xl-7 ">
-              <div className="nav-item  row  itemLinks text-center">
-                <Link className="nav-link col-xl col-xs-12 " to="/">
+            </div >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav">
+                <Link className="nav-link  " to="/">
                   inicio
                 </Link>
-                <Link className="nav-link col-xl col-xs-12" to="/nosotros">
+                <Link className="nav-link " to="/nosotros">
                   nosotros
                 </Link>
-                <Link className="nav-link col-xl col-xs-12" to="/noticias">
+                <Link className="nav-link " to="/noticias">
                   noticias
                 </Link>
-                <Link className="nav-link col-xl col-xs-12" to="/programas">
+                <Link className="nav-link " to="/programas">
                   programas
                 </Link>
                 <Link
-                  className="nav-link col-xl col-xs-12"
+                  className="nav-link "
                   to="/capacitaciones"
                 >
                   capacitaciones
                 </Link>
-                <Link className="nav-link col-xl col-xs-12" to="/reuniones">
+                <Link className="nav-link " to="/reuniones">
                   reuniones
                 </Link>
               </div>
-            </div>
+              </div>
           </div>
         </div>
 
