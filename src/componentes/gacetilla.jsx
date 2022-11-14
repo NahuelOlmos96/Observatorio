@@ -1,16 +1,18 @@
 import React from "react";
 import Flechasesion from "./Flechasesion";
-import datosProgramas from "../datos/programas.js";
-import "../estilos/estilosProgramas.css"
+import "../estilos/estilospresentacion.css";
+import datosProgramas from "../datos/gacetillas.js";
+import "../estilos/estilogacetilla.css"
 
-const Programas = () => {
+const Gacetillas = () => {
   return (
     <div className="contenedor">
       <div className="fondoprogramas">
         <div className="presentacio">
-          <Flechasesion nombreSecion="Programas" />
+          <Flechasesion nombreSecion="Gacetillas" />
         </div>
       </div>
+      <div className="encabezadoCelGacetilla text-primary"><p className="texto">Gacetilla</p></div>
       <div className="contenedorCarrucel">
         <div
           id="carouselExampleControls"
@@ -54,4 +56,4 @@ const Programas = () => {
   );
 };
 
-export default Programas;
+export default Gacetillas;

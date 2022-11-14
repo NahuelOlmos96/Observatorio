@@ -1,15 +1,14 @@
-.fondoNoticias{
-    background-image: url("https://i.ibb.co/ZYQz4fR/NOTICIAS-1.png");
+.fondoprogramas{
+    background-image: url("https://i.ibb.co/GchHZj1/PROGRAMAS.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imagenCarrucel{
     width: 100% !important;
     padding-bottom: 20px;
-    
-    
 
 }
+
 .contenedorCarrucel{
     padding: 10px 80px;
     text-align: start;
@@ -18,10 +17,10 @@
     text-transform: capitalize;
 }
 
-.encabezadoCelNoticias{
+.encabezadoCelProgramas{
     visibility: hidden;
     display: none;
-    background-image: url("../imagenes/imagenesDeFondoRecortadas/noticias\ faja.png");
+    background-image: url("../imagenes/imagenesDeFondoRecortadas/capacitaciones\ faja.png");
     height: 40px ;
     margin: 15px;
     border: 1px black solid;
@@ -29,12 +28,14 @@
     
 
     
-}  
+}
+
+
 
 
 @media only screen and (max-width: 800px){
 
-    .fondoNoticias{
+    .fondoprogramas{
         visibility: hidden;
         display:none;
     }
@@ -42,8 +43,9 @@
     .contenedorCarrucel{
         padding: 10px 10px;
     }
-    .encabezadoCelNoticias{
+    .encabezadoCelProgramas{
         visibility: visible;
         display: grid;
     }
 }
+

@@ -1,3 +1,5 @@
+
+
 .logoSecretaria {
   margin: 10px 5px !important;
   width: 150px !important;
@@ -10,6 +12,7 @@
 .nav-link {
   padding: 0px 10px !important;
   justify-content: center;
+  text-transform: capitalize;
 }
 
 .nav-link:hover {

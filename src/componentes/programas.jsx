@@ -1,16 +1,17 @@
 import React from "react";
-import datosCapacitaciones from "../datos/capacitaciones";
-
+import datosCapacitaciones from "../datos/programas";
+import "../estilos/estiloprograma.css"
 import Flechasesion from "./Flechasesion";
 
-const Capacitaciones = () => {
+const Programas = () => {
   return (
     <div className="contenedor">
       <div className="fondoNoticias">
         <div className="presentacio">
-          <Flechasesion nombreSecion="Capaticiones" />
+          <Flechasesion nombreSecion="Programas" />
         </div>
       </div>
+      <div className="encabezadoCelProgramas text-primary"><p className="texto">Programas</p></div>
       <div className="contenedorCarrucel">
         <div
           id="carouselExampleControls"
@@ -27,9 +28,9 @@ const Capacitaciones = () => {
                   con Desarrollo Tecnológico e Innovación) del FONTAR.
                 </div>
                 <hr />
-                <div>Mas Info: <a href="http://www.agencia.mincyt.gob.ar/frontend/agencia/convocatoria/485">http://www.agencia.mincyt.gob.ar/frontend/agencia/convocatoria/485</a></div>
+                <div>Mas informacion: <a href="http://www.agencia.mincyt.gob.ar/frontend/agencia/convocatoria/485">http://www.agencia.mincyt.gob.ar/frontend/agencia/convocatoria/485</a></div>
               </div>
-            </div>
+            </div> 
 
             {datosCapacitaciones.map((capacitaciones) => (
               <div class="carousel-item">
@@ -79,4 +80,4 @@ const Capacitaciones = () => {
   );
 };
 
-export default Capacitaciones;
+export default Programas;

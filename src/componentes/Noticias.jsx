@@ -13,7 +13,7 @@ export const Noticias = () => {
           <Flechasesion nombreSecion="Noticias" />
         </div>
       </div>
-      <div className="encabezadoCel text-primary">Noticias</div>
+      <div className="encabezadoCelNoticias text-primary"><p className="texto">Noticias</p></div>
       <div className="contenedorCarrucel">
         <div
           id="carouselExampleControls"
@@ -30,6 +30,7 @@ export const Noticias = () => {
                   asistencia del INTI" La empresa STI Developments se convirtió
                   en proveedora de servicios de Industria 4.0 para 23 sedes de
                   una multinacional alimenticia.
+                  
                 </div>
                 <a href="https://www.argentina.gob.ar/noticias/una-pyme-cordobesa-exporta-sistemas-de-mantenimiento-40-al-mercado-europeo-y-asiatico-con">
                   funte

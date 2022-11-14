@@ -11,7 +11,7 @@ export const Nosotros = () => {
           <Flechasesion nombreSecion={"Nosotros"} />
         </div>
       </div>
-      <div className="encabezadoCel text-primary">Nosotros</div>
+      <div className="encabezadoCelNosotros text-primary"><p className="texto">Nosotros</p></div>
       <div className="contenidoNosotros">
         {text[0]}
         <hr />

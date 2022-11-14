@@ -1,45 +1,50 @@
-.fondoNosotros{
-    background-image: url("../imagenes/contenidoNosotros/NOSOTROS.png ");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    
+.fondoNosotros {
+  background-image: url("../imagenes/contenidoNosotros/NOSOTROS.png ");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.encabezadoCel{
+.encabezadoCelNosotros {
+  visibility: hidden;
+  display: none;
+
+  height: 40px;
+  margin: 15px;
+  border: 1px black solid;
+  text-align: center;
+}
+
+.contenidoNosotros {
+  margin: 10px 70px;
+  text-align: start;
+  overflow-y: scroll;
+  scroll-behavior: unset;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 800px) {
+  .fondoNosotros {
     visibility: hidden;
     display: none;
-    background-image: url("../imagenes/contenidoNosotros/NOSOTROS.png ");
-    height: 40px ;
-    margin: 15px;
-    border: 1px black solid;
-    text-align: center;
+  }
+
+  .encabezadoCelNosotros {
+    visibility: visible;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imagenes/imagenesDeFondoRecortadas/nosotrosfaja.png ") !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: antiquewhite;
     
+  }
+  .contenidoNosotros {
+    margin: 12px;
+  }
+  .texto{
+        margin: auto auto;
+        border-radius:  30px;
+        padding: 4px;   
+        background-color: black;
 
-    
-}
-
-.contenidoNosotros{
-    margin: 10px 70px ;
-    text-align: start;
-    overflow-y: scroll;
-    scroll-behavior: unset;
-    text-transform: capitalize;       
-}
-@media only screen and (max-width: 600px) {
-
-    .fondoNosotros{
-        visibility: hidden;
-        display: none;
-        
-    }
-
-    .encabezadoCel{
-        visibility: visible;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .contenidoNosotros{
-        margin: 12px;       
-    }
+  }
 }

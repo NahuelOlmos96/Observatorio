@@ -5,8 +5,8 @@ import { Inicio } from "./componentes/inicio";
 import { Noticias } from "./componentes/Noticias";
 import { Nosotros } from "./componentes/Nosotros";
 import logoSecOb from "./imagenes/logoSecOb.png";
-import Programas from "./componentes/Programas";
-import Capacitaciones from "./componentes/Capacitaciones";
+import Gacetillas from "./componentes/gacetilla";
+import Programas from "./componentes/programas";
 import Reuniones from "./componentes/Reuniones";
 function App() {
   return (
@@ -31,14 +31,14 @@ function App() {
                 <Link className="nav-link " to="/noticias">
                   noticias
                 </Link>
-                <Link className="nav-link " to="/programas">
-                  programas
+                <Link className="nav-link " to="/gacetillas">
+                  Gacetillas
                 </Link>
                 <Link
                   className="nav-link "
-                  to="/capacitaciones"
+                  to="/programas"
                 >
-                  capacitaciones
+                  Programas
                 </Link>
                 <Link className="nav-link " to="/reuniones">
                   reuniones
@@ -52,8 +52,8 @@ function App() {
           <Route path="/" element={<Inicio />}></Route>
           <Route path="/nosotros" element={<Nosotros />}></Route>
           <Route path="/noticias" element={<Noticias />}></Route>
+          <Route path="/gacetillas" element={<Gacetillas />}></Route>
           <Route path="/programas" element={<Programas />}></Route>
-          <Route path="/capacitaciones" element={<Capacitaciones />}></Route>
           <Route path="/reuniones" element={<Reuniones />}></Route>
         </Routes>
       </BrowserRouter>
