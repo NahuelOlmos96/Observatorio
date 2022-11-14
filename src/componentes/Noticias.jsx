@@ -43,7 +43,7 @@ export const Noticias = () => {
                 <img src={noticias.imagen} class="imagenCarrucel" alt="..." />
                 <div className="textNoticia">
                   <div>{noticias.texto}</div>
-                  <a href={noticias.link}>Funte</a>
+                  <a href={noticias.link}>Fuente</a>
                 </div>
               </div>
             ))}
